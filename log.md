@@ -1,6 +1,6 @@
 # Log
 
-Append-only, chronologiczny. Najnowsze wpisy na dole. `grep "^## \[" log.md | tail -5` pokazuje ostatnie 5 operacji.
+Append-only, chronological. Newest entries at the bottom. `grep "^## \[" log.md | tail -5` shows the last 5 operations.
 
-## [YYYY-MM-DD] setup | Inicjalizacja gym-wiki
-Utworzono repo, strukturę folderów (`raw/journal`, `raw/assets`, `wiki/{plan,exercises,nutrition,reviews,insights}`), `AGENT.md`, `index.md`, `log.md`.
+## [YYYY-MM-DD] setup | gym-wiki initialization
+Created repo, folder structure (`raw/journal`, `raw/assets`, `wiki/{plan,exercises,nutrition,reviews,insights}`), `AGENT.md`, `index.md`, `log.md`.

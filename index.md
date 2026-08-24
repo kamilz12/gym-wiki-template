@@ -1,23 +1,23 @@
 # Index — gym-wiki
 
-Katalog stron w `wiki/`. Aktualizowany przy każdym przeglądzie tygodnia i aktualizacji planu. Konwencje: `AGENT.md`.
+Index of pages in `wiki/`. Updated on every weekly review and plan update. Conventions: `AGENT.md`.
 
-**Cel:** _uzupełnij (np. rekompozycja sylwetki, siła, przygotowanie do biegu)._ Start: YYYY-MM-DD.
+**Goal:** _fill in (e.g. body recomposition, strength, race prep)._ Start: YYYY-MM-DD.
 
 ## Plan
-_(pusto — pierwszy plan powstaje po ustaleniu celów i ograniczeń)_
+_(empty — first plan is created once goals and constraints are settled)_
 
-## Żywienie
-_(pusto)_
+## Nutrition
+_(empty)_
 
-## Ćwiczenia
-_(pusto — strony powstają w miarę dodawania ćwiczeń do planu)_
+## Exercises
+_(empty — pages are created as exercises are added to the plan)_
 
-## Przeglądy tygodnia
-_(pusto — pierwszy przegląd po pierwszym pełnym tygodniu)_
+## Weekly reviews
+_(empty — first review after the first full week)_
 
-## Wnioski
-_(pusto)_
+## Insights
+_(empty)_
 
-## Dziennik
-Wpisy dzienne: `raw/journal/YYYY-MM-DD.md` · punkt zero: `raw/journal/baseline.md`
+## Journal
+Daily entries: `raw/journal/YYYY-MM-DD.md` · baseline: `raw/journal/baseline.md`
