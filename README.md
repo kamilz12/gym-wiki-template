@@ -4,6 +4,20 @@ A template for running your own "gym-wiki" — a training/nutrition journal kept
 
 Principle: **you dictate your day in a few sentences, the agent normalizes it into the schema and maintains the rest of the wiki** (plans, exercise pages, weekly reviews, insights). Everything stays as plain `.md` files in this repo — no external app.
 
+## What logging actually looks like
+
+You, in chat, after training:
+
+> squats 3x8 at 55kg felt easy, deadlift 3x6 at 90kg last set was grinding, slept 6h, right shoulder pinched a bit on the last set of bench, like a 2/10
+
+The agent writes `raw/journal/2026-08-25.md` in the schema from `AGENT.md` — structured sets/reps/RIR table, pain logged with location/scale/timing, nothing invented for what you didn't say. Sunday, you ask for a `weekly review`; it rebuilds the rolling weight average, flags which lifts are ready to progress, and updates the shoulder's exercise page if 2/10 pain shows up again on the same movement. That's the whole workflow — no app, no manual spreadsheet upkeep, just talking and re-reading Markdown.
+
+## Is this for you?
+
+Honestly, probably not, unless several of these are true: you already use an AI coding agent (Claude Code or similar) for other things, you're comfortable with git, and you'd rather *think out loud in a chat* than tap numbers into an app. If you just want to log a workout in 10 seconds on your phone, [Hevy](https://www.hevyapp.com/) or [LiftLog](https://github.com/LiamMorrow/LiftLog) will serve you better — they're built for that.
+
+What this gets you that an app doesn't: the agent is a curator, not just a logger — it maintains prose pages that explain *why* your plan looks the way it does, catches contradictions between what you decided last month and what you're doing now, and lets you ask free-form questions ("has my shoulder pain ever shown up on machine work vs. free weights?") against months of journal entries instead of scrolling a chart.
+
 ## Start
 
 1. **Clone the repo:**
