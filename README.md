@@ -15,10 +15,24 @@ Zasada: **Ty dyktujesz dzień w kilku zdaniach, agent normalizuje to do schematu
    - sekcja **"Cel przedsięwzięcia"** na górze (co trenujesz, jaki masz cel, jaki horyzont czasowy),
    - **"Zasady ogólne — zdrowie"** — dopisz swoje kontuzje/ograniczenia, jeśli jakieś masz,
    - **"Zasady ogólne — repo"** — zdecyduj, czy trzymasz repo lokalnie bez zdalnego (dane zdrowotne), czy jednak ze zdalnym, ale prywatnym.
-3. **Otwórz repo w Claude Code** (albo innym agencie) i poproś o operację `wpis` — podyktuj pierwszy dzień w dowolnej, nieuporządkowanej formie (trening, jedzenie, sen, ból). Agent zapisze go w `raw/journal/YYYY-MM-DD.md` wg schematu z `AGENT.md`.
-4. **Poproś o `baseline`** — jednorazowy wpis `raw/journal/baseline.md` z punktem startowym (waga, obwody, zdjęcia w `raw/assets/`, jeśli chcesz).
-5. Dalej po prostu **dyktuj kolejne dni** (operacja `wpis`) i raz w tygodniu proś o **`przegląd tygodnia`** — agent sam zbuduje strony w `wiki/` (plan, ćwiczenia, żywienie, wnioski) i zaktualizuje `index.md`.
-6. Opcjonalnie: otwórz folder w Obsidianie, żeby czytać wiki z linkami `[[...]]` i grafem połączeń.
+3. **Otwórz repo w Claude Code** (albo innym agencie) i poproś o `grilling` na start:
+
+   > Przeczytaj `AGENT.md`. Zgrilluj mnie nt. założenia mojego gym-wiki — chcę ustalić cel, horyzont, ograniczenia zdrowotne, rytm dnia i żywienie, zanim zaczniemy zapisywać cokolwiek. Na podstawie odpowiedzi zaktualizuj `AGENT.md` (sekcja celu, zasady zdrowie/repo), zapisz `raw/journal/baseline.md` jako punkt zerowy, zaproponuj pierwszy szkic `wiki/plan/plan-aktualny.md`, zaktualizuj `index.md` i dodaj pierwszy wpis do `log.md`. Nie zgaduj liczb, których nie podałem — zostaw puste albo dopytaj.
+
+   Skill `grilling` jest dołączony do repa w `.claude/skills/grilling` (patrz sekcja niżej) — działa od razu, bez instalowania pluginu. Agent zada Ci pytania rundami (jedno po drugim, z rekomendowaną odpowiedzią przy każdym), zamiast ankiety naraz, i dopiero po ustaleniu wszystkiego zacznie coś zapisywać.
+4. Dalej po prostu **dyktuj kolejne dni** (operacja `wpis`) i raz w tygodniu proś o **`przegląd tygodnia`** — agent sam zbuduje strony w `wiki/` (plan, ćwiczenia, żywienie, wnioski) i zaktualizuje `index.md`.
+5. Opcjonalnie: otwórz folder w Obsidianie, żeby czytać wiki z linkami `[[...]]` i grafem połączeń.
+
+## Skill: `grilling`
+
+W repo jest dołączony skill projektowy `.claude/skills/grilling` (skopiowany z [mattpocock/skills](https://github.com/mattpocock/skills), MIT — patrz [NOTICE](.claude/skills/grilling/NOTICE.md)). Działa od razu po sklonowaniu, bez instalowania pluginu.
+
+Grilluje Cię pytanie po pytaniu (z rekomendowaną odpowiedzią przy każdym), zamiast czekać aż sam wymyślisz wszystkie decyzje — dobre do rzeczy, gdzie łatwo coś przeoczyć albo pójść na skróty. Poza pierwszym ustawieniem (krok 3 wyżej), warto po niego sięgnąć też przy:
+
+- **przebudowie planu treningowego/dietetycznego** — gdy zmieniasz coś strukturalnie (nowa rotacja, nowe cele makro), a nie tylko dokładasz jedno danie czy jedno ćwiczenie,
+- każdej sytuacji, gdzie czujesz, że decyzja ma dużo rozgałęzień i łatwo coś po drodze zgubić.
+
+Wywołanie: poproś agenta wprost, np. *"zgrilluj mnie nt. przebudowy planu żywieniowego"*.
 
 ## Struktura
 

@@ -1,0 +1,1 @@
+Skopiowane z [mattpocock/skills](https://github.com/mattpocock/skills) (licencja MIT), plugin `mattpocock-skills`, skill `grilling`, bez zmian. Trzymany lokalnie w repo jako skill projektowy, żeby działał od razu po sklonowaniu, bez instalowania pluginu z marketplace.
